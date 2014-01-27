@@ -4,7 +4,7 @@
 
   <groupId>gov.frb.ma.msu</groupId>
   <artifactId>fUnit</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>fUnit</name>
@@ -16,6 +16,16 @@
 
   <build>
     <plugins>
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <configuration>
+        <forkMode>once</forkMode>
+<!--        <workingDirectory>target</workingDirectory> -->
+        <argLine>-Djava.library.path=/opt/fame/timeiq/lib/linux_x86/64/</argLine>
+    </configuration>
+</plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
