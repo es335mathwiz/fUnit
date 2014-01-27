@@ -78,6 +78,8 @@ public static void main(String[] args) {
 	   {
 	        try
 	        {
+System.out.println("working Directory = " + 
+	        System.getProperty("user.dir"));
 	            TryChart frame = new TryChart();
 	        }
 	        catch (Throwable t)
