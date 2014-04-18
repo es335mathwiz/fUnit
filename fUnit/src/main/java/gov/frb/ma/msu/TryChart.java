@@ -1,5 +1,5 @@
 package gov.frb.ma.msu;
-import gov.frb.ma.msu.fUnit.TimeIQDatabase;
+//import gov.frb.ma.msu.fUnit.TimeIQDatabase;
 
 import java.awt.BorderLayout;
 
@@ -80,7 +80,7 @@ public static void main(String[] args) {
 	        {
 System.out.println("working Directory = " + 
 	        System.getProperty("user.dir"));
-	            TryChart frame = new TryChart();
+//	            TryChart frame = new TryChart();
 	        }
 	        catch (Throwable t)
 	        {
